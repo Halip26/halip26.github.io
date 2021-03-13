@@ -51,14 +51,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Content Creator", "Developer", "Video Editor", "Graphic Designer", "Freelancer"],
+        strings: ["Web Developer", "Repairer", "Freelancer", "Graphic Designer", "Video Editor"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Content Creator", "Developer", "Video Editor", "Graphic Designer", "Freelancer"],
+        strings: ["Web Developer", "Repairer", "Freelancer", "Graphic Designer", "Video Editor"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -85,4 +85,23 @@ $(document).ready(function(){
             }
         }
     });
-});    
+});
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxnGTEZfx_kSK1dzujpHBsMQyjF22cMdGUIIjfmtNBPpuXs2kZiWgZ5KkVtxVqQxDFXwA/exec'
+  const form = document.forms['halip26-contact-me']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+}   )
+
+$(document).ready(function(){
+    $("button.send").click(function(){
+      $.get("success.asp", function(data, status){
+          form.reset()
+        alert("Data: " + data + "\nStatus: " + status);
+      });
+    });
+  });
