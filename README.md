@@ -8,7 +8,7 @@
 
 ---
 ### 💻 &nbsp;Preview :
-<p align="center"><img src="images/halip26.github.png" style="width:100%"/></p>
+<p align="center"><img src="images/screenshot.png" style="width:100%"/></p>
 
 - 📫 How to reach me: &nbsp; [![Linkedin Badge](https://img.shields.io/badge/-Halipuddin%20Hambali-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/halipuddin/)
 
