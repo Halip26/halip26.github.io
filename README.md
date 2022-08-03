@@ -4,11 +4,11 @@
 
 
 
-<p align="center"><img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="500" height="300"  /></p>
+<p align="center"><img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" style="width:100%"/></p>
 
 ---
 ### 💻 &nbsp;Preview :
-<p align="center"><img src="images/halip26.github.png" width="500" height="400" /></p>
+<p align="center"><img src="images/halip26.github.png" style="width:100%"/></p>
 
 - 📫 How to reach me: &nbsp; [![Linkedin Badge](https://img.shields.io/badge/-Halipuddin%20Hambali-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/halipuddin/)
 
