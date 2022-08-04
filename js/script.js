@@ -2,7 +2,7 @@ function myFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var btnText = document.getElementById("myBtn");
-    
+
     if (dots.style.display === "none") {
         dots.style.display = "inline";
         btnText.innerHTML = "Read more";
@@ -14,37 +14,37 @@ function myFunction() {
     }
 }
 
-$(document).ready(function(){
-    $(window).scroll(function(){
+$(document).ready(function() {
+    $(window).scroll(function() {
         // sticky navbar on scroll script
-        if(this.scrollY > 20){
+        if (this.scrollY > 20) {
             $('.navbar').addClass("sticky");
-        }else{
+        } else {
             $('.navbar').removeClass("sticky");
         }
-        
+
         // scroll-up button show/hide script
-        if(this.scrollY > 500){
+        if (this.scrollY > 500) {
             $('.scroll-up-btn').addClass("show");
-        }else{
+        } else {
             $('.scroll-up-btn').removeClass("show");
         }
     });
 
     // slide-up script
-    $('.scroll-up-btn').click(function(){
-        $('html').animate({scrollTop: 0});
+    $('.scroll-up-btn').click(function() {
+        $('html').animate({ scrollTop: 0 });
         // removing smooth scroll on slide-up button click
         $('html').css("scrollBehavior", "auto");
     });
 
-    $('.navbar .menu li a').click(function(){
+    $('.navbar .menu li a').click(function() {
         // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
     });
 
     // toggle menu/navbar script
-    $('.menu-btn').click(function(){
+    $('.menu-btn').click(function() {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
@@ -63,7 +63,7 @@ $(document).ready(function(){
         backSpeed: 60,
         loop: true
     });
-  
+
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
@@ -71,15 +71,15 @@ $(document).ready(function(){
         autoplayTimeOut: 2000,
         autoplayHoverPause: true,
         responsive: {
-            0:{
+            0: {
                 items: 1,
                 nav: false
             },
-            600:{
+            600: {
                 items: 2,
                 nav: false
             },
-            1000:{
+            1000: {
                 items: 3,
                 nav: false
             }
@@ -88,20 +88,20 @@ $(document).ready(function(){
 });
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbxnGTEZfx_kSK1dzujpHBsMQyjF22cMdGUIIjfmtNBPpuXs2kZiWgZ5KkVtxVqQxDFXwA/exec'
-  const form = document.forms['halip26-contact-me']
+const form = document.forms['halip26-contact-me']
 
-  form.addEventListener('submit', e => {
+form.addEventListener('submit', e => {
     e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-}   )
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+})
 
-$(document).ready(function(){
-    $("button.send").click(function(){
-      $.get("success.txt", function(data, status){
-          form.reset()
-        alert("Data: " + data + "\nStatus: " + status);
-      });
+$(document).ready(function() {
+    $("button.send").click(function() {
+        $.get("success.txt", function(data, status) {
+            form.reset()
+            alert("Data: " + data + "\nStatus: " + status);
+        });
     });
-  });
+});
