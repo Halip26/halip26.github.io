@@ -2,21 +2,21 @@
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-0e76a8?style=flat-square&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/halipuddin/)
 [![Medium Badge](https://img.shields.io/badge/medium-%2312100E.svg?&style=for-square&logo=medium&logoColor=white)](https://medium.com/@halip26)
 
-
-
 <p align="center"><img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" style="width:100%"/></p>
 
 ---
-### 💻 &nbsp;Preview :
+
+### 💻 &nbsp;Preview
+
 <p align="center"><img src="images/screenshot.png" style="width:100%"/></p>
 
 - 📫 How to reach me: &nbsp; [![Linkedin Badge](https://img.shields.io/badge/-Halipuddin%20Hambali-blue?style=flat&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/halipuddin/)
 
 ---
 
-### 🛠 &nbsp;Languages and Tools :
+### 🛠 &nbsp;Languages and Tools
 
-<p> 
+<p>
 <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
 <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
@@ -26,7 +26,8 @@
 </p>
 
 ---
-### 📑 &nbsp;License:
+
+### 📑 &nbsp;License
 
 MIT License
 
