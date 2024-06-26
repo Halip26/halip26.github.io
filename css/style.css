@@ -1,5 +1,6 @@
-/*  import google fonts */
+/* import google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +41,7 @@ section {
 }
 
 .about,
-.services,
+.projects,
 .skills,
 .sosmed,
 .contact,
@@ -49,7 +50,7 @@ footer {
 }
 
 .about .about-content,
-.services .serv-content,
+.projects .proj-content,
 .skills .skills-content,
 .contact .contact-content {
   display: flex;
@@ -167,7 +168,7 @@ section .title::after {
   line-height: 45px;
   color: #fff;
   z-index: 9999;
-  font-size: 30px;
+  font-size: 35px;
   border-radius: 6px;
   border-bottom-width: 2px;
   cursor: pointer;
@@ -246,7 +247,7 @@ section .title::after {
   background: none;
 }
 
-.services a {
+.projects a {
   position: absolute;
   align-items: center;
   left: 50%;
@@ -254,7 +255,7 @@ section .title::after {
   background: crimson;
   color: #fff;
   font-size: 15px;
-  padding: 12px 36px;
+  padding: 12px 20px;
   margin-top: 25px;
   font-weight: bold;
   border-radius: 6px;
@@ -262,7 +263,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.services a:hover {
+.projects a:hover {
   color: crimson;
   background: none;
 }
@@ -319,58 +320,59 @@ section .title::after {
   background: none;
 }
 
-/* services section styling */
-.services,
+/* projects section styling */
+.projects,
 .sosmed {
   color: #fff;
   background: #111;
 }
 
-.services .title::before,
+.projects .title::before,
 .sosmed .title::before {
   background: #fff;
 }
 
-.services .title::after,
+.projects .title::after,
 .sosmed .title::after {
   background: #111;
   content: "what I build";
 }
 
-.services .serv-content .card {
+.projects .proj-content .card {
   width: calc(33% - 20px);
   background: #222;
   text-align: center;
   border-radius: 6px;
   padding: 20px 25px;
+  margin-bottom: 30px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover {
+.projects .proj-content .card:hover {
   background: crimson;
 }
 
-.services .serv-content .card .box {
+.projects .proj-content .card .box {
   transition: all 0.3s ease;
 }
 
-.services .serv-content .card:hover .box {
+.projects .proj-content .card:hover .box {
   transform: scale(1.05);
 }
 
-.services .serv-content .card i {
+.projects .proj-content .card i {
   font-size: 50px;
   margin: 4px;
   color: crimson;
   transition: color 0.3s ease;
 }
 
-.services .serv-content .card:hover i {
+.projects .proj-content .card:hover i {
   color: #fff;
 }
 
-.services .serv-content .card .text {
+.projects .proj-content .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
@@ -450,11 +452,11 @@ section .title::after {
 }
 
 .skills-content .right .css::before {
-  width: 80%;
+  width: 85%;
 }
 
 .skills-content .right .js::before {
-  width: 75%;
+  width: 80%;
 }
 
 .skills-content .right .py::before {
@@ -466,12 +468,20 @@ section .title::after {
 }
 
 .skills-content .right .mysql::before {
+  width: 75%;
+}
+
+.skills-content .right .java::before {
+  width: 70%;
+}
+
+.skills-content .right .cpp::before {
   width: 70%;
 }
 
 /* sosmed section styling */
 .sosmed .title::after {
-  content: "Follow me";
+  content: "follow me";
 }
 
 .sosmed .carousel .card {
@@ -703,7 +713,7 @@ footer span a:hover {
     display: block;
     z-index: 999;
   }
-  .services a {
+  .projects a {
     margin-top: 10px;
     text-align: center;
   }
@@ -756,7 +766,7 @@ footer span a:hover {
   .about .about-content .right {
     flex: 100%;
   }
-  .services .serv-content .card {
+  .projects .proj-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
   }
@@ -780,7 +790,7 @@ footer span a:hover {
   .home .home-content a {
     font-size: 20px;
   }
-  .services .serv-content .card {
+  .projects .proj-content .card {
     width: 100%;
   }
 }
