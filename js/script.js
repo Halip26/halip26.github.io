@@ -53,8 +53,8 @@ $(document).ready(function () {
   var typed = new Typed(".typing", {
     strings: [
       "Web Developer",
-      "Repairer",
-      "Freelancer",
+      "Coding Educator",
+      "Data Engineer",
       "Graphic Designer",
       "Video Editor",
     ],
@@ -66,8 +66,8 @@ $(document).ready(function () {
   var typed = new Typed(".typing-2", {
     strings: [
       "Web Developer",
-      "Repairer",
-      "Freelancer",
+      "Coding Educator",
+      "Data Engineer",
       "Graphic Designer",
       "Video Editor",
     ],
@@ -100,7 +100,7 @@ $(document).ready(function () {
 });
 
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbxnGTEZfx_kSK1dzujpHBsMQyjF22cMdGUIIjfmtNBPpuXs2kZiWgZ5KkVtxVqQxDFXwA/exec";
+  "https://script.google.com/macros/s/AKfycbzjrZetE2AIs2v2hSF0SdzOCj0f0fPOgiF_CkwfNyytqzq3SeFgcyt3ZUbZfrqWcy4U/exec";
 const form = document.forms["halip26-contact-me"];
 
 form.addEventListener("submit", (e) => {
