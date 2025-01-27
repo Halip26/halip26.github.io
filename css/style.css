@@ -638,7 +638,7 @@ section .title::after {
 
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus {
-  border-color: #b3b3b3;
+  border-color: crimson;
 }
 
 .contact .right form .textarea textarea {
