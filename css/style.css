@@ -43,7 +43,7 @@ section {
 .about,
 .projects,
 .skills,
-.sosmed,
+.socmed,
 .contact,
 footer {
   font-family: "Poppins", sans-serif;
@@ -322,18 +322,18 @@ section .title::after {
 
 /* projects section styling */
 .projects,
-.sosmed {
+.socmed {
   color: #fff;
   background: #111;
 }
 
 .projects .title::before,
-.sosmed .title::before {
+.socmed .title::before {
   background: #fff;
 }
 
 .projects .title::after,
-.sosmed .title::after {
+.socmed .title::after {
   background: #111;
   content: "what I build";
 }
@@ -479,12 +479,12 @@ section .title::after {
   width: 70%;
 }
 
-/* sosmed section styling */
-.sosmed .title::after {
+/* socmed section styling */
+.socmed .title::after {
   content: "follow me";
 }
 
-.sosmed .carousel .card {
+.socmed .carousel .card {
   background: #222;
   border-radius: 6px;
   padding: 25px 35px;
@@ -493,11 +493,11 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.sosmed .carousel .card:hover {
+.socmed .carousel .card:hover {
   background: crimson;
 }
 
-.sosmed .carousel .card .box {
+.socmed .carousel .card .box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -505,17 +505,17 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.sosmed .carousel .card:hover .box {
+.socmed .carousel .card:hover .box {
   transform: scale(1.05);
 }
 
-.sosmed .carousel .card .text {
+.socmed .carousel .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
 
-.sosmed .carousel .card img {
+.socmed .carousel .card img {
   height: 150px;
   width: 150px;
   object-fit: cover;
@@ -524,7 +524,7 @@ section .title::after {
   transition: all 0.3s ease;
 }
 
-.sosmed .carousel .card:hover img {
+.socmed .carousel .card:hover img {
   border-color: #fff;
 }
 
