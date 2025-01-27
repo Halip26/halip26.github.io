@@ -105,18 +105,22 @@ const form = document.forms["halip26-contact-me"];
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  fetch(scriptURL, { method: "POST", body: new FormData(form) })
-    .then((response) => console.log("Success!", response))
-    .catch((error) => console.error("Error!", error.message));
-});
+  if (form.checkValidity()) {
+    fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => console.log("Success!", response))
+      .catch((error) => console.error("Error!", error.message));
 
-$(document).ready(function () {
-  $("button.send").click(function () {
-    $.get("success.txt", function (data, status) {
-      form.reset();
-      alert("Data: " + data + "\nStatus: " + status);
+    $(document).ready(function () {
+      $("button.send").click(function () {
+        $.get("success.txt", function (data, status) {
+          form.reset();
+          alert("Data: " + data + "\nStatus: " + status);
+        });
+      });
     });
-  });
+  } else {
+    form.reportValidity();
+  }
 });
 
 // Get the current year
