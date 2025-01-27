@@ -107,17 +107,14 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (form.checkValidity()) {
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
-      .then((response) => console.log("Success!", response))
-      .catch((error) => console.error("Error!", error.message));
-
-    $(document).ready(function () {
-      $("button.send").click(function () {
+      .then((response) => {
+        console.log("Success!", response);
         $.get("success.txt", function (data, status) {
           form.reset();
           alert("Data: " + data + "\nStatus: " + status);
         });
-      });
-    });
+      })
+      .catch((error) => console.error("Error!", error.message));
   } else {
     form.reportValidity();
   }
