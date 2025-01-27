@@ -109,10 +109,8 @@ form.addEventListener("submit", (e) => {
     fetch(scriptURL, { method: "POST", body: new FormData(form) })
       .then((response) => {
         console.log("Success!", response);
-        $.get("success.txt", function (data, status) {
-          form.reset();
-          alert("Data: " + data + "\nStatus: " + status);
-        });
+        form.reset();
+        alert("Form submitted successfully!\nTerima Kasih :)\nBy @Halip26");
       })
       .catch((error) => console.error("Error!", error.message));
   } else {
