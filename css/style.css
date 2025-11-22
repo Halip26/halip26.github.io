@@ -705,6 +705,15 @@ footer span a:hover::before {
   transform: scaleX(1);
 }
 
+/* Fix background zoom on iOS / small touch devices */
+@supports (-webkit-overflow-scrolling: touch) {
+  .home {
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
 /* responsive media query start */
 @media (max-width: 1300px) {
   .home .max-width {
@@ -875,6 +884,15 @@ footer span a:hover::before {
     width: 35px;
     font-size: 23px;
     line-height: 38px;
+  }
+}
+
+/* extra safety for narrow viewports */
+@media (max-width: 420px) {
+  .home {
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
   }
 }
 
