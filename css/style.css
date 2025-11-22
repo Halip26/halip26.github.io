@@ -821,43 +821,6 @@ footer span a:hover::before {
   }
 }
 
-/* responsive for my iPhone 15 */
-/* @media (max-width: 393px) {
-  .max-width {
-    padding: 0 15px;
-  }
-
-  .home .home-content .text-1 {
-    font-size: 20px;
-  }
-  .home .home-content .text-2 {
-    font-size: 40px;
-  }
-  .home .home-content .text-3 {
-    font-size: 20px;
-  }
-  .home .home-content a {
-    font-size: 16px;
-    padding: 8px 20px;
-  }
-  .about .about-content .left img {
-    height: 250px;
-    width: 250px;
-  }
-  .about .about-content .right .text {
-    font-size: 16px;
-  }
-  .skills .skills-content .left .text {
-    font-size: 16px;
-  }
-  .contact .contact-content .text {
-    font-size: 16px;
-  }
-  section .title {
-    font-size: 30px;
-    margin-bottom: 40px;
-  }
-} */
 
 @media (max-width: 500px) {
   .home .home-content .text-2 {
