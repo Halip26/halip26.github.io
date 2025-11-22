@@ -706,7 +706,6 @@ footer span a:hover::before {
 }
 
 /* responsive media query start */
-
 @media (max-width: 1300px) {
   .home .max-width {
     margin-left: 0px;
@@ -810,6 +809,47 @@ footer span a:hover::before {
   }
   .projects .proj-content .card {
     width: 100%;
+  }
+}
+
+@media (max-width: 393px) {
+  .max-width {
+    padding: 0 15px;
+  }
+  .home {
+    width: 100%;
+    height: 80%;
+  }
+
+  .home .home-content .text-1 {
+    font-size: 20px;
+  }
+  .home .home-content .text-2 {
+    font-size: 40px;
+  }
+  .home .home-content .text-3 {
+    font-size: 20px;
+  }
+  .home .home-content a {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+  .about .about-content .left img {
+    height: 250px;
+    width: 250px;
+  }
+  .about .about-content .right .text {
+    font-size: 16px;
+  }
+  .skills .skills-content .left .text {
+    font-size: 16px;
+  }
+  .contact .contact-content .text {
+    font-size: 16px;
+  }
+  section .title {
+    font-size: 30px;
+    margin-bottom: 40px;
   }
 }
 
